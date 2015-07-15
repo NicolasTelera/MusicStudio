@@ -52,7 +52,7 @@ implements TrackFragment.OnFragmentInteraction, MixFragment.OnFragmentInteractio
     private String projectName;     // nom du projet courant
     private String projectPath;     // chemin du projet courant
     private boolean projectSaved;   // projet sauvegardé
-    private boolean tick;           // tick de métronome
+    private boolean tick;
     private ArrayList<TrackFragment> tracks;
     private MixFragment mixer;
     private Timer clock;
