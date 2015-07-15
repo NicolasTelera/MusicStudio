@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Une piste de mixage -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    android:background="@drawable/custom_border_track_sound"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/mix_track_name"
+        android:layout_width="150dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mix_track_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_margin="15dp"
+        android:layout_alignRight="@id/mix_track_name"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+</LinearLayout>

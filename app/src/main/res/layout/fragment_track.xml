@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Une piste -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="80dp"
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
+
+        <!-- Le bloc de boutons -->
+        <RelativeLayout
+            android:id="@+id/track_buttons_block"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/custom_border_track_buttons">
+
+            <TextView
+                android:id="@+id/track_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="TRACK" />
+
+            <Button
+                android:id="@+id/track_record_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Record"
+                style="@style/Base.Widget.AppCompat.ActionBar" />
+
+            <Switch
+                android:id="@+id/track_mute_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mute"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/track_record_button" />
+
+            <ProgressBar
+                android:id="@+id/track_progress_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"
+                style="?android:attr/progressBarStyleHorizontal" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- Le bloc de droite -->
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2">
+
+        <!-- La piste -->
+        <RelativeLayout
+            android:id="@+id/track_sound_block"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/custom_border_track_sound">
+
+            <!-- La barre de temps -->
+            <RelativeLayout
+                android:id="@+id/play_time_bar"
+                android:orientation="horizontal"
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="#FF0000">
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

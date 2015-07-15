@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5"
+        android:orientation="horizontal" android:background="@color/dim_foreground_material_dark">
+
+        <ScrollView android:id="@+id/tracksScroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <!-- la barre du temps -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp">
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@color/abc_search_url_text_normal">
+                    <TextView
+                        android:id="@+id/project_name_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="left"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:text="New Project"/>
+                    <TextView
+                        android:id="@+id/project_bpm_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignRight="@id/project_name_text"
+                        android:gravity="right"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:text="bpm : 60"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/tracks_time"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/button_material_dark"></RelativeLayout>
+            </LinearLayout>
+
+                <!-- conteneur des pistes -->
+                <LinearLayout
+                    android:id="@+id/tracks"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+
+                <!-- zone d'ajout d'une nouvelle piste -->
+                <LinearLayout android:layout_below="@id/tracks" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <Button
+                        android:src="@drawable/add_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="New track"
+                        android:id="@+id/button_add_track"
+                        android:onClick="addTrack"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mix_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+    </LinearLayout>
+
+</RelativeLayout>

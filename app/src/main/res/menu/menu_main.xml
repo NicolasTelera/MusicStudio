@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_tick" android:title="Tick" android:icon="@drawable/ic_action_time_ko"
+        android:orderInCategory="0" app:showAsAction="always" />
+    <item android:id="@+id/action_play_all" android:title="Lecture" android:icon="@drawable/ic_action_play"
+        android:orderInCategory="1" app:showAsAction="always" />
+    <item android:id="@+id/action_pause_all" android:title="Pause" android:icon="@drawable/ic_action_pause"
+        android:orderInCategory="2" app:showAsAction="always" />
+    <item android:id="@+id/action_stop_all" android:title="Stop" android:icon="@drawable/ic_action_stop"
+        android:orderInCategory="3" app:showAsAction="always" />
+    <item android:id="@+id/action_mix" android:title="Mix" android:icon="@drawable/ic_action_sort_by_size"
+        android:orderInCategory="4" app:showAsAction="always" />
+    <item android:id="@+id/action_new_project" android:title="New"
+        android:orderInCategory="5" app:showAsAction="never" />
+    <item android:id="@+id/action_open_project" android:title="Open"
+        android:orderInCategory="6" app:showAsAction="never" />
+    <item android:id="@+id/action_save_project" android:title="Save"
+        android:orderInCategory="7" app:showAsAction="never" />
+    <item android:id="@+id/action_save_as_project" android:title="Save As"
+        android:orderInCategory="8" app:showAsAction="never" />
+    <!--
+    <item android:id="@+id/action_export_project" android:title="Export"
+        android:orderInCategory="9" app:showAsAction="never" />
+        -->
+    <item android:id="@+id/action_quit_app" android:title="Quit"
+        android:orderInCategory="10" app:showAsAction="never" />
+</menu>
+
